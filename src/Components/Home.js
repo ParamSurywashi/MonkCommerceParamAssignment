@@ -45,25 +45,31 @@ function Home() {
     <div className="Home">
       <h2>Add Bundle Projects (Max. 4 Products)</h2>
 
-      {productSelections.map((index, itemIndex) => (
-        
-        <div
-          key={index}
-          className="product-selection-container"
-          draggable
-          onDragStart={(event) => handleDragStart(event, itemIndex)}
-          onDrop={(event) => handleDrop(event, itemIndex)}
-          onDragOver={handleDragOver}
-        > 
-          <MdDragIndicator className="DnDIcon" />
-          <ProductSelection 
-            handleRemoveProductSelection={() => handleRemoveProductSelection(index)} 
-          />
-        </div>
-      ))}
+      <ol className="ProductSelectionBox">
+        {productSelections.map((index, itemIndex) => (
+          <div
+            key={index}
+            className="product-selection-container"
+            draggable
+            onDragStart={(event) => handleDragStart(event, itemIndex)}
+            onDrop={(event) => handleDrop(event, itemIndex)}
+            onDragOver={handleDragOver}
+          >
+            <MdDragIndicator className="DnDIcon" />
+            <ProductSelection
+              handleRemoveProductSelection={() =>
+                handleRemoveProductSelection(index)
+              }
+            />
+          </div>
+        ))}
+      </ol>
 
       {
-        <button className="btn_styles_box_outline add-product-btn" onClick={handleAddProduct}>
+        <button
+          className="btn_styles_box_outline add-product-btn"
+          onClick={handleAddProduct}
+        >
           Add Product
         </button>
       }

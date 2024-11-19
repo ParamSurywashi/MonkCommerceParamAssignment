@@ -40,7 +40,6 @@ function ProductSelection({handleRemoveProductSelection}) {
 
   return (
     <div>
-      <ol className="ProductSelectionBox">
         <li>
           <div className="Dis_box">
             <input
@@ -80,7 +79,6 @@ function ProductSelection({handleRemoveProductSelection}) {
             )}
           </div>
         </li>
-      </ol>
       {showPopup && (
         <SelectProductPopupBox
           onClose={handleClosePopup}
