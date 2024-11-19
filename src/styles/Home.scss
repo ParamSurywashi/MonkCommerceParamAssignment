@@ -1,0 +1,107 @@
+body{
+    font-family: cursive;
+    background-image: url('../background.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    }
+
+.add-product-btn {
+    transition: transform 0.3s ease-out;
+    width: 10vh;
+    margin-left: 57vh;
+  }
+  
+.ProductSelectionBox {
+    display: flex;
+    align-items: center;
+}
+.DnDIcon {
+    font-size: 2em;
+    margin-right: 1em;
+}
+.editIcon {
+    color: #008060;
+    margin-left: -2em;
+}
+.add_discount_select_box_btn{
+    margin-left: 2em;
+}
+
+.txt_product_select_box{
+    border: 1px solid #ccc;
+    padding: 10px 25px 10px 10px;
+    border-radius: 4px;
+    width: 250px;
+    margin-right: 10px;
+    font-family: cursive;
+}
+.btn_styles_box {
+    width: 30vh;
+    background-color: #008060;
+    color: white;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: cursive;
+}
+.btn_styles_box_outline{
+    width: 30vh;
+    background-color: white;
+    color: #008060;
+    padding: 15px 0px;
+    border: 2px solid #008060;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: cursive;
+}
+.Dis_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num__select_box {
+    width: 15vh;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-left: 25px;
+  }
+  
+  .flat_option_box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    width: 15vh;
+    cursor: pointer;
+  }
+  
+  .flat_option_box:hover {
+    background-color: #eee;
+  } 
+
+  .num_flat_box_div {
+    display: flex;
+    align-items: center;
+  }
+  .Select_Box_Delete_Icon {
+    font-size: 2em;
+    margin-left: 4px;
+  }
+
+.product-selection-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+   
+  }
+  
+  .DnDIcon {
+    margin-left: 10px;
+    cursor: grab;
+    font-size: 1.5rem;
+  }
+  
