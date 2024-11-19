@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MdDragIndicator, MdOutlineModeEdit } from "react-icons/md";
+import { MdOutlineModeEdit } from "react-icons/md";
 import SelectProductPopupBox from "./SelectProductPopupBox";
 import { MdClose } from "react-icons/md";
 

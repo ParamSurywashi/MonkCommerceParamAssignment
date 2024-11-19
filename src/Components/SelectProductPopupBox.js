@@ -121,6 +121,7 @@ function SelectProductPopupBox({ onClose, onProductSelect }) {
 
   useEffect(() => {
     setProducts(productData);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleProductSelect = (productId) => {
