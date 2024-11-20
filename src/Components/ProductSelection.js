@@ -1,9 +1,9 @@
-import { useState } from "react";
+import {useState } from "react";
 import { MdOutlineModeEdit } from "react-icons/md";
 import SelectProductPopupBox from "./SelectProductPopupBox";
 import { MdClose } from "react-icons/md";
 
-function ProductSelection({handleRemoveProductSelection}) {
+function ProductSelection({productData, handleRemoveProductSelection, handleDoneVariantSelection}) {
   const [showDiscount, setShowDiscount] = useState(true);
   const [discountValue, setDiscountValue] = useState(0);
   const [discountType, setDiscountType] = useState("percent");
@@ -35,7 +35,6 @@ function ProductSelection({handleRemoveProductSelection}) {
   const handleProductSelect = (productName) => {
     setSelectedProduct(productName);
     setShowPopup(false);
-    
   };
 
   return (
@@ -81,11 +80,14 @@ function ProductSelection({handleRemoveProductSelection}) {
         </li>
       {showPopup && (
         <SelectProductPopupBox
+          productData = {productData}
           onClose={handleClosePopup}
           onProductSelect={handleProductSelect}
+          handleDoneVariantSelection = {handleDoneVariantSelection}
         />
       )}
     </div>
+    
   );
 }
 

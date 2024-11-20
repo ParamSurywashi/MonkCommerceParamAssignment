@@ -1,128 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import '../styles/SelectProductPopupBox.scss';
 import { MdClose } from "react-icons/md";
 
-function SelectProductPopupBox({ onClose, onProductSelect }) {
-  const [products, setProducts] = useState([]);
+function SelectProductPopupBox({productData, onClose, onProductSelect, handleDoneVariantSelection }) {
   const [SelectProdNum, SetSelectProdNum] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedProducts, setSelectedProducts] = useState({});
-
-
-  const productData = [
-    {
-      "id": 77,
-      "title": "Fog Linen Chambray Towel - Beige Stripe",
-      "variants": [
-        {
-          "id": 1,
-          "product_id": 77,
-          "title": "XS / Silver",
-          "available": "99",
-          "price": "49"
-        },
-        {
-          "id": 2,
-          "product_id": 77,
-          "title": "S / Silver",
-          "available": "99",
-          "price": "49"
-        },
-        {
-          "id": 3,
-          "product_id": 77,
-          "title": "M / Silver",
-          "available": "99",
-          "price": "49"
-        },
-        {
-          "id": 4,
-          "product_id": 77,
-          "title": "L / Silver",
-          "available": "49",
-          "price": "49"
-        },
-        {
-          "id": 5,
-          "product_id": 77,
-          "title": "XS / Gold",
-          "available": "99",
-          "price": "49"
-        }
-      ],
-      "image": {
-        "id": 266,
-        "product_id": 77,
-        "src": "https://cdn11.bigcommerce.com/s-p1xcugzp89/products/77/images/266/foglinenbeigestripetowel1b.1647248662.386.513.jpg?c=1"
-      }
-    },
-    {
-      "id": 80,
-      "title": "Orbit Terrarium - Large",
-      "variants": [
-        {
-          "id": 64,
-          "product_id": 80,
-          "title": "Product Narket",
-          "available": "99",
-           "price": "109"
-        },
-        {
-          "id": 65,
-          "product_id": 80,
-          "title": "Small / Green",
-          "price": "99"
-        },
-        {
-          "id": 66,
-          "product_id": 80,
-          "title": "Medium / Green",
-          "price": "104"
-        }
-      ],
-      "image": {
-        "id": 272,
-        "product_id": 80,
-        "src": "https://cdn11.bigcommerce.com/s-p1xcugzp89/products/80/images/272/roundterrariumlarge.1647248662.386.513.jpg?c=1"
-      }
-    },
-    {
-      "id": 81,
-      "title": "Sunset Beach Towel - Stripe",
-      "variants": [
-        {
-          "id": 7,
-          "product_id": 81,
-          "title": "S / Blue",
-          "price": "39"
-        },
-        {
-          "id": 8,
-          "product_id": 81,
-          "title": "M / Blue",
-          "available": "35",
-          "price": "44"
-        },
-        {
-          "id": 9,
-          "product_id": 81,
-          "title": "L / Blue",
-          "available": "65",
-          "price": "49"
-        }
-      ],
-      "image": {
-        "id": 273,
-        "product_id": 81,
-        "src": "https://cdn11.bigcommerce.com/s-p1xcugzp89/products/81/images/273/sunsetbeachtowelstripe.1647248662.386.513.jpg?c=1"
-      }
-    }
-  ];
-
-  useEffect(() => {
-    setProducts(productData);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const handleProductSelect = (productId) => {
     setSelectedProducts((prevState) => {
@@ -155,14 +38,16 @@ function SelectProductPopupBox({ onClose, onProductSelect }) {
       }
       
       const isVariantSelected = newSelected[productId]?.[variantId];
-      console.log(isVariantSelected)
-      if (isVariantSelected === undefined) {
+      if (isVariantSelected === undefined || isVariantSelected === false) {
+        newSelected[productId] = {
+          ...newSelected[productId],
+          [variantId]: true,
+        };
+      } else {
         newSelected[productId] = {
           ...newSelected[productId],
           [variantId]: false,
         };
-      } else {
-        newSelected[productId][variantId] = !isVariantSelected;
       }
   
       const hasAtLeastOneVariantSelected = Object.values(newSelected[productId]).some(
@@ -193,22 +78,19 @@ function SelectProductPopupBox({ onClose, onProductSelect }) {
     let productName = '';
     Object.keys(selectedProducts).forEach((productId) => {
       const selectedProduct = selectedProducts[productId];
-      const product = products.find((p) => p.id === Number(productId));
+      const product = productData.find((p) => p.id === Number(productId));
   
       if (selectedProduct) {
         productName = product.title;
       }
     });
-  
     onProductSelect(productName);
+    handleDoneVariantSelection(selectedProducts);
   };
-  const filteredProducts = products.filter((product) =>
+  const filteredProducts = productData.filter((product) =>
     product.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
   
-  useEffect(()=>{
-    console.log(selectedProducts)
-  })
   return (
     <div className="popup">
       <div className="popup-content">
@@ -263,7 +145,7 @@ function SelectProductPopupBox({ onClose, onProductSelect }) {
                           />
                         </td>
                         <td>{variant.title}</td>
-                        <td>{variant.available || 0} available</td>
+                        <td>{variant.inventory_quantity || 0} available</td>
                         <td>${variant.price}</td>
                       </tr>
                     );

@@ -1,0 +1,615 @@
+[
+  {
+    "id": 7067750727887,
+    "title": "Women's Sneakers",
+    "vendor": "Monk Commerce",
+    "handle": "cross-sell-popup-demo-womens-sneakers",
+    "created_at": "2022-07-18T22:45:33Z",
+    "updated_at": "2023-10-21T20:27:25Z",
+    "published_at": "2022-07-18T22:45:31Z",
+    "tags": "PPROTECTION",
+    "options": [
+      {
+        "id": 9047979655375,
+        "product_id": 7067750727887,
+        "name": "Size",
+        "position": 1,
+        "values": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      }
+    ],
+    "image": {
+      "id": 31048574828751,
+      "product_id": 7067750727887,
+      "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/womens2_e8ad6e80-f096-47e5-b4a3-402d75b8197e.jpg?v=1660399646"
+    },
+    "images": [
+      {
+        "id": 31048574828751,
+        "product_id": 7067750727887,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/womens2_e8ad6e80-f096-47e5-b4a3-402d75b8197e.jpg?v=1660399646"
+      },
+      {
+        "id": 31048574861519,
+        "product_id": 7067750727887,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/womens3_f00d699f-74d4-4c7f-a619-ee34e2355697.jpg?v=1660399646"
+      },
+      {
+        "id": 31048574894287,
+        "product_id": 7067750727887,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/WomensShoes1_0e378763-feca-4d89-8001-7811ebfeee84.jpg?v=1660399646"
+      }
+    ],
+    "admin_graphql_api_id": "gid://shopify/Product/7067750727887",
+    "status": "active",
+    "variants": [
+      {
+        "id": 41931712430287,
+        "product_id": 7067750727887,
+        "title": "6",
+        "inventory_policy": "deny",
+        "price": "28",
+        "inventory_management": "shopify",
+        "option1": "6",
+        "created_at": "2022-07-18T22:45:33Z",
+        "updated_at": "2023-10-27T14:35:35Z",
+        "inventory_quantity": 996,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712430287"
+      },
+      {
+        "id": 41931712463055,
+        "product_id": 7067750727887,
+        "title": "7",
+        "inventory_policy": "deny",
+        "price": "28",
+        "inventory_management": "shopify",
+        "option1": "7",
+        "created_at": "2022-07-18T22:45:33Z",
+        "updated_at": "2023-10-27T14:35:35Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712463055"
+      },
+      {
+        "id": 41931712495823,
+        "product_id": 7067750727887,
+        "title": "8",
+        "inventory_policy": "deny",
+        "price": "28",
+        "inventory_management": "shopify",
+        "option1": "8",
+        "created_at": "2022-07-18T22:45:33Z",
+        "updated_at": "2023-10-27T14:35:35Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712495823"
+      },
+      {
+        "id": 41931712528591,
+        "product_id": 7067750727887,
+        "title": "9",
+        "inventory_policy": "deny",
+        "price": "28",
+        "inventory_management": "shopify",
+        "option1": "9",
+        "created_at": "2022-07-18T22:45:33Z",
+        "updated_at": "2023-10-27T14:35:35Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712528591"
+      }
+    ]
+  },
+  {
+    "id": 6805254308047,
+    "title": "Example Hat 119",
+    "vendor": "Acme",
+    "handle": "119",
+    "created_at": "2021-08-15T18:28:55Z",
+    "updated_at": "2021-11-07T10:33:28Z",
+    "published_at": "2021-10-28T19:14:25Z",
+    "tags": "mens hat example",
+    "options": [
+      {
+        "id": 8720148037839,
+        "product_id": 6805254308047,
+        "name": "Title",
+        "position": 1,
+        "values": [
+          "Grey"
+        ]
+      }
+    ],
+    "image": {
+      "id": 29377122730191,
+      "product_id": 6805254308047,
+      "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/kids-beanie_0e9b555c-5679-4a36-b3f0-5a02f97b1fa9.jpg?v=1629052135"
+    },
+    "images": [
+      {
+        "id": 29377122730191,
+        "product_id": 6805254308047,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/kids-beanie_0e9b555c-5679-4a36-b3f0-5a02f97b1fa9.jpg?v=1629052135"
+      }
+    ],
+    "admin_graphql_api_id": "gid://shopify/Product/6805254308047",
+    "status": "active",
+    "variants": [
+      {
+        "id": 40499661144271,
+        "product_id": 6805254308047,
+        "title": "Grey",
+        "inventory_policy": "deny",
+        "price": "17.99",
+        "compare_at_price": "22.99",
+        "option1": "Grey",
+        "created_at": "2021-08-15T18:28:55Z",
+        "updated_at": "2023-10-27T14:35:24Z",
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/40499661144271"
+      }
+    ]
+  },
+  {
+    "id": 7067750695119,
+    "title": "Premium Trainers",
+    "vendor": "Monk Commerce",
+    "handle": "premium-trainers",
+    "created_at": "2022-07-18T22:45:31Z",
+    "updated_at": "2023-10-21T20:24:30Z",
+    "published_at": "2022-07-18T22:45:27Z",
+    "tags": "eligible, PPROTECTION",
+    "options": [
+      {
+        "id": 9047979622607,
+        "product_id": 7067750695119,
+        "name": "Size",
+        "position": 1,
+        "values": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
+      }
+    ],
+    "image": {
+      "id": 31048574533839,
+      "product_id": 7067750695119,
+      "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/runningshoes1_8de8358b-1636-4b81-ab78-f6618f8156c7.jpg?v=1660399642"
+    },
+    "images": [
+      {
+        "id": 31048574533839,
+        "product_id": 7067750695119,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/runningshoes1_8de8358b-1636-4b81-ab78-f6618f8156c7.jpg?v=1660399642"
+      },
+      {
+        "id": 31048574566607,
+        "product_id": 7067750695119,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/runnginshoes2_2762b050-ae64-4fec-bf4f-a84859669090.jpg?v=1660399642"
+      },
+      {
+        "id": 31048574599375,
+        "product_id": 7067750695119,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/runningshoes3_fe4dadac-659c-4042-b985-5f0c61163603.jpg?v=1660399643"
+      }
+    ],
+    "admin_graphql_api_id": "gid://shopify/Product/7067750695119",
+    "status": "active",
+    "variants": [
+      {
+        "id": 41931712299215,
+        "product_id": 7067750695119,
+        "title": "7",
+        "inventory_policy": "deny",
+        "price": "75",
+        "inventory_management": "shopify",
+        "option1": "7",
+        "created_at": "2022-07-18T22:45:31Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 993,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712299215"
+      },
+      {
+        "id": 41931712331983,
+        "product_id": 7067750695119,
+        "title": "8",
+        "inventory_policy": "deny",
+        "price": "75",
+        "inventory_management": "shopify",
+        "option1": "8",
+        "created_at": "2022-07-18T22:45:31Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712331983"
+      },
+      {
+        "id": 41931712364751,
+        "product_id": 7067750695119,
+        "title": "9",
+        "inventory_policy": "deny",
+        "price": "75",
+        "inventory_management": "shopify",
+        "option1": "9",
+        "created_at": "2022-07-18T22:45:31Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712364751"
+      },
+      {
+        "id": 41931712397519,
+        "product_id": 7067750695119,
+        "title": "10",
+        "inventory_policy": "deny",
+        "price": "75",
+        "inventory_management": "shopify",
+        "option1": "10",
+        "created_at": "2022-07-18T22:45:31Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712397519"
+      }
+    ]
+  },
+  {
+    "id": 7067750760655,
+    "title": "Premium Trekking Shoes",
+    "vendor": "Monk Commerce",
+    "handle": "bundle-popup-demo-premium-trekking-shoes",
+    "created_at": "2022-07-18T22:45:36Z",
+    "updated_at": "2023-10-21T20:25:55Z",
+    "published_at": "2022-07-18T22:45:34Z",
+    "tags": "PPROTECTION",
+    "options": [
+      {
+        "id": 9047979688143,
+        "product_id": 7067750760655,
+        "name": "Size",
+        "position": 1,
+        "values": [
+          "7",
+          "8",
+          "9"
+        ]
+      }
+    ],
+    "image": {
+      "id": 31048574992591,
+      "product_id": 7067750760655,
+      "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/trek1_c385d319-7f19-455c-8180-d804c2461780.jpg?v=1660399649"
+    },
+    "images": [
+      {
+        "id": 31048574992591,
+        "product_id": 7067750760655,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/trek1_c385d319-7f19-455c-8180-d804c2461780.jpg?v=1660399649"
+      },
+      {
+        "id": 31048575025359,
+        "product_id": 7067750760655,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/trek2_4f67a2b2-0000-47e6-98fe-e2e01c8d17ff.jpg?v=1660399649"
+      },
+      {
+        "id": 31048575058127,
+        "product_id": 7067750760655,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/trek3_3a371553-5603-4e7e-9172-b7a2170586ef.jpg?v=1660399649"
+      }
+    ],
+    "admin_graphql_api_id": "gid://shopify/Product/7067750760655",
+    "status": "active",
+    "variants": [
+      {
+        "id": 41931712594127,
+        "product_id": 7067750760655,
+        "title": "7",
+        "inventory_policy": "deny",
+        "price": "120",
+        "inventory_management": "shopify",
+        "option1": "7",
+        "created_at": "2022-07-18T22:45:36Z",
+        "updated_at": "2023-10-27T14:35:35Z",
+        "inventory_quantity": 999,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712594127"
+      },
+      {
+        "id": 41931712626895,
+        "product_id": 7067750760655,
+        "title": "8",
+        "inventory_policy": "deny",
+        "price": "120",
+        "inventory_management": "shopify",
+        "option1": "8",
+        "created_at": "2022-07-18T22:45:36Z",
+        "updated_at": "2023-10-27T14:35:35Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712626895"
+      },
+      {
+        "id": 41931712659663,
+        "product_id": 7067750760655,
+        "title": "9",
+        "inventory_policy": "deny",
+        "price": "120",
+        "inventory_management": "shopify",
+        "option1": "9",
+        "created_at": "2022-07-18T22:45:36Z",
+        "updated_at": "2023-10-27T14:35:35Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712659663"
+      }
+    ]
+  },
+  {
+    "id": 7067750498511,
+    "title": "Wool Loafers",
+    "vendor": "Monk Commerce",
+    "handle": "wool-loafers",
+    "created_at": "2022-07-18T22:45:15Z",
+    "updated_at": "2023-10-21T20:27:41Z",
+    "published_at": "2022-07-18T22:45:14Z",
+    "tags": "PPROTECTION",
+    "options": [
+      {
+        "id": 9047979360463,
+        "product_id": 7067750498511,
+        "name": "Color",
+        "position": 1,
+        "values": [
+          "Blue",
+          "Brown",
+          "Black"
+        ]
+      }
+    ],
+    "image": {
+      "id": 31048573223119,
+      "product_id": 7067750498511,
+      "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/Neemans_M_Wool_Loafer_Aqua_Blue_Creative_FrontView_700x.progressive_e3100668-e88f-43be-8c26-83bed562a890.jpg?v=1660399624"
+    },
+    "images": [
+      {
+        "id": 31048573223119,
+        "product_id": 7067750498511,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/Neemans_M_Wool_Loafer_Aqua_Blue_Creative_FrontView_700x.progressive_e3100668-e88f-43be-8c26-83bed562a890.jpg?v=1660399624"
+      }
+    ],
+    "admin_graphql_api_id": "gid://shopify/Product/7067750498511",
+    "status": "active",
+    "variants": [
+      {
+        "id": 41931711512783,
+        "product_id": 7067750498511,
+        "title": "Blue",
+        "inventory_policy": "deny",
+        "price": "300",
+        "compare_at_price": "350",
+        "inventory_management": "shopify",
+        "option1": "Blue",
+        "created_at": "2022-07-18T22:45:15Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931711512783"
+      },
+      {
+        "id": 41931711545551,
+        "product_id": 7067750498511,
+        "title": "Brown",
+        "inventory_policy": "deny",
+        "price": "100",
+        "compare_at_price": "350",
+        "inventory_management": "shopify",
+        "option1": "Brown",
+        "created_at": "2022-07-18T22:45:15Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 997,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931711545551"
+      },
+      {
+        "id": 41931711578319,
+        "product_id": 7067750498511,
+        "title": "Black",
+        "inventory_policy": "deny",
+        "price": "200",
+        "compare_at_price": "350",
+        "inventory_management": "shopify",
+        "option1": "Black",
+        "created_at": "2022-07-18T22:45:15Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931711578319"
+      }
+    ]
+  },
+  {
+    "id": 7067750695120,
+    "title": "Premium Trainers",
+    "vendor": "Monk Commerce",
+    "handle": "premium-trainers",
+    "created_at": "2022-07-18T22:45:31Z",
+    "updated_at": "2023-10-21T20:24:30Z",
+    "published_at": "2022-07-18T22:45:27Z",
+    "tags": "eligible, PPROTECTION",
+    "options": [
+      {
+        "id": 9047979622607,
+        "product_id": 7067750695120,
+        "name": "Size",
+        "position": 1,
+        "values": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
+      }
+    ],
+    "image": {
+      "id": 31048574533839,
+      "product_id": 7067750695120,
+      "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/runningshoes1_8de8358b-1636-4b81-ab78-f6618f8156c7.jpg?v=1660399642"
+    },
+    "images": [
+      {
+        "id": 31048574533839,
+        "product_id": 7067750695120,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/runningshoes1_8de8358b-1636-4b81-ab78-f6618f8156c7.jpg?v=1660399642"
+      },
+      {
+        "id": 31048574566607,
+        "product_id": 7067750695120,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/runnginshoes2_2762b050-ae64-4fec-bf4f-a84859669090.jpg?v=1660399642"
+      },
+      {
+        "id": 31048574599375,
+        "product_id": 7067750695120,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/runningshoes3_fe4dadac-659c-4042-b985-5f0c61163603.jpg?v=1660399643"
+      }
+    ],
+    "admin_graphql_api_id": "gid://shopify/Product/7067750695120",
+    "status": "active",
+    "variants": [
+      {
+        "id": 41931712299215,
+        "product_id": 7067750695120,
+        "title": "7",
+        "inventory_policy": "deny",
+        "price": "75",
+        "inventory_management": "shopify",
+        "option1": "7",
+        "created_at": "2022-07-18T22:45:31Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 993,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712299215"
+      },
+      {
+        "id": 41931712331983,
+        "product_id": 7067750695120,
+        "title": "8",
+        "inventory_policy": "deny",
+        "price": "75",
+        "inventory_management": "shopify",
+        "option1": "8",
+        "created_at": "2022-07-18T22:45:31Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712331983"
+      },
+      {
+        "id": 41931712364751,
+        "product_id": 7067750695120,
+        "title": "9",
+        "inventory_policy": "deny",
+        "price": "75",
+        "inventory_management": "shopify",
+        "option1": "9",
+        "created_at": "2022-07-18T22:45:31Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712364751"
+      },
+      {
+        "id": 41931712397519,
+        "product_id": 7067750695120,
+        "title": "10",
+        "inventory_policy": "deny",
+        "price": "75",
+        "inventory_management": "shopify",
+        "option1": "10",
+        "created_at": "2022-07-18T22:45:31Z",
+        "updated_at": "2023-10-27T14:35:34Z",
+        "inventory_quantity": 1000,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/41931712397519"
+      }
+    ]
+  },
+  {
+    "id": 6673087594703,
+    "title": "Yellow Polo T-Shirt",
+    "vendor": "store-mk-dev",
+    "handle": "yellow-polo-t-shirt",
+    "created_at": "2021-05-03T16:44:45Z",
+    "updated_at": "2021-11-07T10:33:15Z",
+    "published_at": "2021-05-03T16:44:54Z",
+    "options": [
+      {
+        "id": 8554401497295,
+        "product_id": 6673087594703,
+        "name": "Size",
+        "position": 1,
+        "values": [
+          "S",
+          "M"
+        ]
+      }
+    ],
+    "image": {
+      "id": 28726880075983,
+      "product_id": 6673087594703,
+      "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/4cce130c-3ce4-438b-a031-4b49edebaee21536839916849-US-Polo-Assn-Men-Yellow-Solid-Polo-Collar-T-shirt-81536839916696-2.jpg?v=1620060287",
+      "variant_ids": [
+        39639678615759
+      ]
+    },
+    "images": [
+      {
+        "id": 28726880075983,
+        "product_id": 6673087594703,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/4cce130c-3ce4-438b-a031-4b49edebaee21536839916849-US-Polo-Assn-Men-Yellow-Solid-Polo-Collar-T-shirt-81536839916696-2.jpg?v=1620060287",
+        "variant_ids": [
+          39639678615759
+        ]
+      },
+      {
+        "id": 28726880108751,
+        "product_id": 6673087594703,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/7710f75d-8214-4e5f-8179-a714c86783571536839916834-US-Polo-Assn-Men-Yellow-Solid-Polo-Collar-T-shirt-81536839916696-3.jpg?v=1620060288"
+      },
+      {
+        "id": 28726880043215,
+        "product_id": 6673087594703,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/41522a0f-cd95-4033-b731-33f32a90de321536839916815-US-Polo-Assn-Men-Yellow-Solid-Polo-Collar-T-shirt-81536839916696-4.jpg?v=1620060288",
+        "variant_ids": [
+          39639678648527
+        ]
+      },
+      {
+        "id": 28726880010447,
+        "product_id": 6673087594703,
+        "src": "https://cdn.shopify.com/s/files/1/0506/8439/5727/products/cab1c97f-edde-4a41-9fbd-79a5a97449351536839916869-US-Polo-Assn-Men-Yellow-Solid-Polo-Collar-T-shirt-81536839916696-1.jpg?v=1620060288"
+      }
+    ],
+    "admin_graphql_api_id": "gid://shopify/Product/6673087594703",
+    "status": "active",
+    "variants": [
+      {
+        "id": 39639678615759,
+        "product_id": 6673087594703,
+        "title": "S",
+        "inventory_policy": "deny",
+        "price": "1320",
+        "inventory_management": "shopify",
+        "option1": "S",
+        "created_at": "2021-05-03T16:44:45Z",
+        "updated_at": "2023-10-27T14:35:18Z",
+        "image_id": 28726880075983,
+        "inventory_quantity": 10,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/39639678615759"
+      },
+      {
+        "id": 39639678648527,
+        "product_id": 6673087594703,
+        "title": "M",
+        "inventory_policy": "deny",
+        "price": "1320",
+        "inventory_management": "shopify",
+        "option1": "M",
+        "created_at": "2021-05-03T16:44:45Z",
+        "updated_at": "2023-10-27T14:35:18Z",
+        "image_id": 28726880043215,
+        "inventory_quantity": 10,
+        "admin_graphql_api_id": "gid://shopify/ProductVariant/39639678648527"
+      }
+    ]
+  }
+]
