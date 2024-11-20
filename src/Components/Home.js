@@ -10,7 +10,7 @@ function Home() {
   const [productData, setProductData] = useState([]);
   const [showVariants, setShowVariants] = useState({});
   const [newSelectedProVariants, setNewSelectedProVariants] = useState({});
-  
+  const [selectedProduct, setSelectedProduct] = useState("");
   
   useEffect(() => {
     setProductData(jsonData);
@@ -28,6 +28,22 @@ function Home() {
       prevSelections.filter((_, index) => index !== indexToRemove)
     );
   };
+
+  const handleRemoveVariantSelection = (productId, variantId) => {
+    setNewSelectedProVariants((prevVariants) => {
+      const updatedVariants = { ...prevVariants };
+      if (updatedVariants[productId]) {
+        const updatedProductVariants = { ...updatedVariants[productId] };
+        delete updatedProductVariants[variantId];
+        updatedVariants[productId] = updatedProductVariants;
+  
+        if (Object.keys(updatedProductVariants).length === 0) {
+          delete updatedVariants[productId];
+        }
+      }
+      return updatedVariants;
+    });
+  };  
 
   const handleDragStart = (event, index) => {
     event.dataTransfer.setData("draggedIndex", index);
@@ -80,6 +96,7 @@ function Home() {
         // if (Object.keys(filteredData[productId]).length > 0) {
         //   //handleAddProductWithVariants(productId, filteredData[productId]);
         // }
+        setSelectedProduct(matchedProduct.title);
       }
     });
     setNewSelectedProVariants(filteredData);
@@ -107,6 +124,7 @@ function Home() {
                   handleRemoveProductSelection(index)
                 }
                 handleDoneVariantSelection={handleAddVarientFun}
+                selectedProduct = {selectedProduct}
               />
             </div>
             <button
@@ -120,7 +138,7 @@ function Home() {
               <>
                 {Object.entries(newSelectedProVariants).map(([productId, variants]) => {
                     return (
-                      <VariantsSelectedBox key={productId} variants={variants} />
+                      <VariantsSelectedBox key={productId} productId={productId} variants={variants} handleRemoveVariantSelection={handleRemoveVariantSelection} />
                     );
                   }
                 )}

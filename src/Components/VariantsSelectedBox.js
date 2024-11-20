@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { MdDragIndicator, MdOutlineModeEdit } from "react-icons/md";
+import { MdDragIndicator, MdOutlineModeEdit, MdClose } from "react-icons/md";
 
-function VariantsSelectedBox({ variants }) {
+function VariantsSelectedBox({productId, variants, handleRemoveVariantSelection }) {
   const [variantOrder, setVariantOrder] = useState(Object.entries(variants));
 
   const handleDragStart = (event, index) => {
@@ -17,7 +17,7 @@ function VariantsSelectedBox({ variants }) {
     const [draggedItem] = updatedOrder.splice(draggedIndex, 1);
     updatedOrder.splice(index, 0, draggedItem);
 
-    setVariantOrder(updatedOrder); // Update the state to reflect the new order
+    setVariantOrder(updatedOrder);
   };
 
   const handleDragOver = (event) => {
@@ -26,9 +26,9 @@ function VariantsSelectedBox({ variants }) {
 
   return (
     <ol className="variants-main-box">
-      {variantOrder.map(([variantId, variant], index) => ( // Use variantOrder here
+      {variantOrder.map(([variantId, variant], index) => (
         <li
-          key={variantId}
+        key={`${productId}-${variantId}`} 
           className="variant-box"
           draggable
           onDragStart={(event) => handleDragStart(event, index)}
@@ -45,6 +45,7 @@ function VariantsSelectedBox({ variants }) {
           <MdOutlineModeEdit className="editIcon" />
           <p className="variant_price">{variant.inventory_quantity} available</p>
           <p className="variant_price">{variant.price} $</p>
+          <MdClose className="Select_Box_Delete_Icon"  onClick={() => handleRemoveVariantSelection(productId, variantId)} />
         </li>
       ))}
     </ol>
