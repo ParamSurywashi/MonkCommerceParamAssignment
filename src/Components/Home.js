@@ -10,7 +10,6 @@ function Home() {
   const [productData, setProductData] = useState([]);
   const [showVariants, setShowVariants] = useState({});
   const [newSelectedProVariants, setNewSelectedProVariants] = useState({});
-  const [selectedProduct, setSelectedProduct] = useState("");
   
   useEffect(() => {
     setProductData(jsonData);
@@ -96,7 +95,6 @@ function Home() {
         // if (Object.keys(filteredData[productId]).length > 0) {
         //   //handleAddProductWithVariants(productId, filteredData[productId]);
         // }
-        setSelectedProduct(matchedProduct.title);
       }
     });
     setNewSelectedProVariants(filteredData);
@@ -124,7 +122,6 @@ function Home() {
                   handleRemoveProductSelection(index)
                 }
                 handleDoneVariantSelection={handleAddVarientFun}
-                selectedProduct = {selectedProduct}
               />
             </div>
             <button

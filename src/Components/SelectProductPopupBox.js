@@ -2,7 +2,7 @@ import React, {useState } from 'react';
 import '../styles/SelectProductPopupBox.scss';
 import { MdClose } from "react-icons/md";
 
-function SelectProductPopupBox({productData, onClose, handleDoneVariantSelection }) {
+function SelectProductPopupBox({productData, onClose, onProductSelect, handleDoneVariantSelection }) {
   const [SelectProdNum, SetSelectProdNum] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedProducts, setSelectedProducts] = useState({});
@@ -75,8 +75,17 @@ function SelectProductPopupBox({productData, onClose, handleDoneVariantSelection
   };
 
   const handleDoneClick = () => {
+    let productName = '';
+    Object.keys(selectedProducts).forEach((productId) => {
+      const selectedProduct = selectedProducts[productId];
+      const product = productData.find((p) => p.id === Number(productId));
+  
+      if (selectedProduct) {
+        productName = product.title;
+      }
+    });
+    onProductSelect(productName);
     handleDoneVariantSelection(selectedProducts);
-    onClose();
   };
   const filteredProducts = productData.filter((product) =>
     product.title.toLowerCase().includes(searchTerm.toLowerCase())
